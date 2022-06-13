@@ -20,5 +20,6 @@ student_TrainingDuration bigint NOT NULL,
 student_trainingtechnology varchar NOT NULL,
 student_ExtraActivityDetails varchar NOT NULL,
 Placement_companies varchar  NOT NULL
+  primary key(Student_DepartmentID)
 
 );
