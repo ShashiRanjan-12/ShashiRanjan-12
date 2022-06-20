@@ -1,72 +1,61 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Session.aspx.cs" Inherits="admin_Session" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/admin/MasterPage.master" AutoEventWireup="true" CodeFile="semester.aspx.cs" Inherits="admin_semester" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="YEAR" runat="server">
-      
-       <!DOCTYPE html>
-<html>
-<title>Session</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://localhost:51888/admin/admindashboard.aspx">
-<body>
-
-<div class="container">
-  <h2>SESSION DETAILS</h2>
-    <h4> <\t> BATCH   BRANCH   SESSION</\t>    </h4>
+    <div class ="row">
  
-  <div class="panel color='red">
-     
-  </div>
 
-</div>
-
-</body>
-</html>
-           
-    <div class="rows">
-     
-   
-        
-     
-
-            <asp:DropDownList ID="ddlstatus" CssClass="form-control" runat="server">
-              
-                <asp:ListItem>2018-2022</asp:ListItem>
-                <asp:ListItem>2019-2023</asp:ListItem>
-                <asp:ListItem>2020-2024</asp:ListItem>
-                <asp:ListItem>2021-2025</asp:ListItem> 
-                   </asp:DropDownList>
+    <div class="main-panel">        
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Student Details</h4>
                   
-
-                  <asp:DropDownList ID="DropDownList1" CssClass="form-control" runat="server">
-               
-                <asp:ListItem>CSE</asp:ListItem>
-                <asp:ListItem>MECHNICAL</asp:ListItem>
-                <asp:ListItem>CIVIL</asp:ListItem>
-                <asp:ListItem>EEE</asp:ListItem>
-                <asp:ListItem>ECE</asp:ListItem>
-               
-               
-                  </asp:DropDownList>
-
-             <asp:DropDownList ID="DropDownList2" CssClass="form-control" runat="server">
-                
-                <asp:ListItem>2020-2021</asp:ListItem>
-                <asp:ListItem>2021-2022</asp:ListItem>
-                <asp:ListItem>2022-2023</asp:ListItem>
-                <asp:ListItem>2023-2024</asp:ListItem>
-               
-               
-               
-                  </asp:DropDownList>
-
+                  <form class="forms-sample">
+                    <div class="form-group">
+                      <label for="exampleInputName">Name</label>
+                      <input type="text" class="form-control" id="txtname" placeholder="Student Name ">
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Student ID">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputConfirmPassword1">Semester</label>
+                      <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Password">
+                    </div>
+                      <label for="exampleInputName">Semester</label>
+                      <input type="text" class="form-control" id="txtname" placeholder="Student ">
+                    </div>
+                    <div class="form-check form-check-flat form-check-primary">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        Remember me
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <button class="btn btn-light">Cancel</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
         </div>
-    </form>
-</body>
-</html>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        
+        <!-- partial -->
+         </div>
+
+    </div>
+
+</asp:Content>
+
+
