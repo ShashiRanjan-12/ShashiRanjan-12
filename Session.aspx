@@ -25,13 +25,20 @@
                       <label for="exampleInputPassword1">Password</label>
                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Student ID">
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputConfirmPassword1">Semester</label>
-                      <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Password">
+                   
+                   
+                     <label for="exampleInputName">Semester</label>
+                      <input type="text" class="form-control" id="txtname" placeholder="Enter semester details ">
+                      <div>
+                      <p> <tb> Batch Details<br />  </tb> </p>
                     </div>
-                      <label for="exampleInputName">Semester</label>
-                      <input type="text" class="form-control" id="txtname" placeholder="Student ">
-                    </div>
+                  <asp:DropDownList ID="DropDownList1" runat="server">
+                 <asp:ListItem>2018-2022</asp:ListItem>
+                <asp:ListItem>2019-2023</asp:ListItem>
+                <asp:ListItem>2020-2024</asp:ListItem>
+                <asp:ListItem>2021-2025</asp:ListItem> 
+                   </asp:DropDownList>
+                   
                     <div class="form-check form-check-flat form-check-primary">
                       <label class="form-check-label">
                         <input type="checkbox" class="form-check-input">
@@ -57,5 +64,6 @@
     </div>
 
 </asp:Content>
+
 
 
