@@ -19,6 +19,6 @@ Internship_cerificateID bigint NOT NULL,
 
 Course_ID varchar NOT NULL,
 Course_Name varchar(50) NOT NULL ,
-
+primary key(Student ID);
 
 );
